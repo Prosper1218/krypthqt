@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 import {BackgroundCircles2} from "../Header";
 import {Links} from "../../../Data";
 import '../../../App.css'
+import cross from "/public/cross.png"
+import menu from "/public/menu.png"
 const Nav = () => {
    const [Navactive, setNavactive] = useState(false);
    // const pathname = usePathname();
@@ -64,7 +66,7 @@ const Nav = () => {
                </button>
             </section>
             <button type="button" className={`flex md:hidden ham border-[#fe6700] border-2 border-solid rounded-md p-2 z-auto`} onClick={handlebtnclick}>
-               {Navactive ? <Cross1Icon className="text-[#fe6700] scale-125" /> : <HamburgerMenuIcon className="text-[#fe6700] scale-125" />}
+               {Navactive ? <img src={cross} className="text-[#fe6700] scale-125 w-4 h-4" /> : <img src={menu} className="text-[#fe6700] scale-150 w-4 h-4" />}
             </button>
          </nav>
       </>
