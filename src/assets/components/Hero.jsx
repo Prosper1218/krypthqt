@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="hidden lg:block">
                <BackgroundCircles />
             </div>{" "}
-            <div className=" hidden md:block">
+            <div className="">
                <BackgroundCircles2 />
             </div>
             {/* <SideLines/> */}

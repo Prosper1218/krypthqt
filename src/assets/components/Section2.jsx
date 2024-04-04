@@ -1,4 +1,4 @@
-"use client";
+import React from "react";
 import talentedpeople from "../../../public/talentedpeople.jpg";
 import {SideLines} from "./Header";
 const Section2 = () => {
@@ -31,7 +31,7 @@ const Section2 = () => {
                <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                   Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story.
                </p>
-              
+
                <button
                   onClick={() => {}}
                   type="button"
