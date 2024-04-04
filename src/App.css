@@ -1,0 +1,226 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@500&family=Josefin+Sans:wght@600&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* :root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  color-scheme: dark;
+} */
+#root {
+   max-width: 100%;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden !important;
+}
+body {
+   width: 100%;
+}
+.sora {
+   font-family: "sora", sans-serif;
+}
+.scp {
+   font-family: "Source Code Pro", monospace;
+}
+.grotesk {
+   font-family: "Space Grotesk";
+}
+.caveat {
+   font-family: "Caveat", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+
+* {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   color-scheme: dark;
+}
+
+.nav {
+   transition: 0.5s ease-in-out;
+}
+#link {
+   font-size: 85%;
+   font-family: "sora", sans-serif;
+   /* color: #cccccc; */
+}
+#link:hover {
+   color: #fe6700;
+   transition: 0.2s linear;
+}
+
+.meriweather {
+   font-family: "Merriweather", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.notf {
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 900;
+   font-style: normal;
+   font-size: larger;
+}
+@media only screen and (max-width: 368px) {
+   .hq {
+      font-size: 150%;
+   }
+}
+@media only screen and (max-width: 765px) {
+   #link {
+      font-size: 150%;
+      font-family: "sora", sans-serif;
+   }
+}
+
+@media only screen and (max-width: 292px) {
+   .hq {
+      font-size: 130%;
+   }
+}
+
+.teamcard {
+   cursor: pointer;
+}
+.teamcard:hover {
+   /* scale: 1.01; */
+   transition: ease-in-out 0.3s;
+   box-shadow: rgba(55, 55, 63, 0.2) 0px 2px 24px;
+}
+.ham {
+   transition: ease-in-out 0.3s;
+}
+.josephin {
+   font-family: "Josefin Sans", sans-serif;
+}
+
+.lds-ring {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+}
+.lds-ring div {
+   box-sizing: border-box;
+   display: block;
+   position: absolute;
+   width: 64px;
+   height: 64px;
+   margin: 8px;
+   border: 7px solid #fe6700;
+   border-radius: 50%;
+   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+   border-color: #fe6700 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+   animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+   animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+   animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.sphere {
+   background-color: none !important;
+   animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.breathe {
+   animation: breathe 4s ease-in-out infinite alternate;
+}
+
+@keyframes breathe {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.5);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+.jump {
+   animation: jump 4s ease-in-out infinite alternate;
+}
+
+@keyframes jump {
+   0% {
+      margin-top: 1rem;
+   }
+   50% {
+      margin-top: 2rem;
+   }
+   100% {
+      margin-top: 1rem;
+   }
+}
