@@ -4,6 +4,9 @@ import nft3 from "../public/nfts/nft3.jpeg";
 import nft4 from "../public/nfts/nft4.jpg";
 import nft5 from "../public/nfts/nft5.jpg";
 import nft6 from "../public/nfts/nft6.jpg";
+import twitter from "/twitter.png";
+import linkedin from "/linkedin.png";
+import telegram from "/telegram.png";
 
 export const Links = [
    {
@@ -139,3 +142,30 @@ export const Team = [
    },
 ];
 
+export const Socials = [
+   // {
+   //    id: 1,
+   //    icon: instagram,
+   //    title: "instagram",
+   // },
+   {
+      id: 2,
+      icon: twitter,
+      title: "twitter",
+   },
+   {
+      id: 3,
+      icon: linkedin,
+      title: "linkedIn",
+   },
+   // {
+   //    id: 4,
+   //    icon: facebook,
+   //    title: "facebook",
+   // },
+   {
+      id: 5,
+      icon: telegram,
+      title: "telegram",
+   },
+];

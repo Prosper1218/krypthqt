@@ -20,7 +20,7 @@ const TheTeam = () => {
                [&nbsp; Meet Us &nbsp;]
             </p>
             <p className={`px-4 text-xs md:text-md sora text-center  ${theme === "light" ? "text-[#121212] " : "text-[#cccccc]"}`}>
-               Meet the faces behind our mission. <br /> Our dedicated team brings passion, expertise, and creativity to everything we do.
+               Meet the faces behind our mission. <br /> Our dedicated team brings passion, expertise, and creativity to everything they do.
             </p>
          </div>
          {/*  */}

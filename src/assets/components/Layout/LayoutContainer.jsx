@@ -8,7 +8,7 @@ const LayoutContainer = () => {
       <div className="bg-[#121212] min-h-[100vh] h-auto overflow-x-hidden ">
          <Nav />
          <Outlet />
-      
+         <Footer />
       </div>
    );
 };

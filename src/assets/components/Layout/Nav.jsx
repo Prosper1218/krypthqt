@@ -43,7 +43,7 @@ const Nav = () => {
                <img src={theme === "light" ? logo2 : logo} alt="logo" className="md:w-[8rem] md:h-[5.4rem] w-[6rem] h-[4rem]" />
             </Link>
             <section
-               className={`md:flex justify-center gap-6 md:gap-8 uppercase md:items-center md:text-xs left-0 right-0 bottom-0 md:bg-transparent md:w-auto fixed md:static top-[5.5rem] md:h-auto flex-col md:flex-row font-semibold flex items-start pl-8 transition z-30 nav transform md:translate-x-0 text-n-1  ${
+               className={`md:flex justify-center gap-6 md:gap-8 uppercase md:items-center md:text-xs left-0 right-0 bottom-0 md:bg-transparent md:w-auto fixed md:static top-[5.5rem] md:h-screen flex-col md:flex-row font-semibold flex items-start pl-8 transition z-30 nav transform md:translate-x-0 text-n-1  ${
                   Navactive ? "translate-x-0 opacity-100" : "translate-x-[-50rem]"
                }
                ${theme === "light" ? "text-[#121212] bg-white" : "text-[#cccccc] bg-[#121212]"}
@@ -66,7 +66,7 @@ const Nav = () => {
                </button>
             </section>
             <button type="button" className={`flex md:hidden ham border-[#fe6700] border-2 border-solid rounded-md p-2 z-auto`} onClick={handlebtnclick}>
-               {Navactive ? <img src={cross} className="text-[#fe6700] scale-125 w-4 h-4" /> : <img src={menu} className="text-[#fe6700] scale-150 w-4 h-4" />}
+               {Navactive ? <img src={cross} className="text-[#fe6700] scale-110 w-4 h-4" /> : <img src={menu} className="text-[#fe6700] scale-150 w-4 h-4" />}
             </button>
          </nav>
       </>
