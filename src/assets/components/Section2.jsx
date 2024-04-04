@@ -31,11 +31,10 @@ const Section2 = () => {
                <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                   Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story.
                </p>
-
                <button
                   onClick={() => {}}
                   type="button"
-                  className={`outline-none focus:outline-none border-[#fe6700] rounded-lg border-solid border-2 px-6 py-3 uppercase ${
+                  className={`outline-none focus:outline-none border-[#fe6700] rounded-lg border-solid mt-4 border-2 px-6 py-3 uppercase ${
                      theme === "light" ? "text-[#121212]" : "text-[white]"
                   } text-[75%]`}
                >

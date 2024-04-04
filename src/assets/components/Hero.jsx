@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="px-6 mx-auto max-w-7xl py-4">
                <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 sm:text-center">
                   <h1
-                     className={`mb-4 text-5xl font-extrabold leading-none overflow-hidden tracking-normal md:text-6xl md:tracking-tight py-2  ${
+                     className={`mb-4 text-4xl font-extrabold leading-none overflow-hidden tracking-normal md:text-6xl md:tracking-tight py-2  ${
                         theme === "light" ? "text-[#121212]" : "text-[#fdfef2]"
                      } `}
                   >
