@@ -4,12 +4,12 @@ import {Socials} from "../../../Data";
 const Footer = () => {
    return (
       <div className="">
-         <section className={`min-h-[5rem] h-auto px-8 sm:px-36 m-auto  flex flex-col justify-center relative pb-2  border-t-[1px] border-solid border-gray-100/20 border `}>
+         <section className={`min-h-[5rem] h-auto px-8 sm:px-36 m-auto  flex flex-col justify-center relative pb-2  border-t-[1px] border-solid border-gray-100/20 `}>
             <div className=" flex sm:justify-between justify-center w-full sm:w-auto items-center max-sm:flex-col space-y-4 ">
-               <p className="caption text-gray-300/50 text-xs josephin lg:block">© {new Date().getFullYear()}. All rights reserved.</p>
+               <p className="caption text-gray-300/50 text-xs josephin lg:block py-2 md:py-0">© {new Date().getFullYear()}. All rights reserved.</p>
 
-               <section className=" p-1">
-                  <p className="text-[60%] sora text-gray-200/40 py-1"> Follow us:</p>
+               <section className=" md:p-1">
+                  <p className="text-[60%] sora text-gray-200/40 md:py-1"> Follow us:</p>
                   <ul className="flex gap-3 flex-wrap">
                      {Socials.map((item) => (
                         <a
