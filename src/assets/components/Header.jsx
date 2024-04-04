@@ -1,11 +1,11 @@
-import bitcoin from "../../../public/images-coins/bitcoin.svg";
-import ethereum from "../../../public/images-coins/ethereum.svg";
-import binance from "../../../public/images-coins/binance.svg";
-import tether from "../../../public/images-coins/tether.svg";
-import dogecoin from "../../../public/images-coins/dogecoin.svg";
-import litecoin from "../../../public/images-coins/litecoin.svg";
-import codeicon from "../../../public/codeicon.png";
-import filecoin from "../../../public/images-coins/filecoin.svg";
+import bitcoin from "/public/images-coins/bitcoin.svg";
+import ethereum from "/public/images-coins/ethereum.svg";
+import binance from "/public/images-coins/binance.svg";
+import tether from "/public/images-coins/tether.svg";
+import dogecoin from "/public/images-coins/dogecoin.svg";
+import litecoin from "/public/images-coins/litecoin.svg";
+import codeicon from "/public/codeicon.png";
+import filecoin from "/public/images-coins/filecoin.svg";
 // import {MouseParallax, ScrollParallax} from "react-just-parallax";
 
 export const Rings = () => {

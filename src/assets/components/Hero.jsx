@@ -1,5 +1,5 @@
 import trader from "../../../public/traderbg.jpg";
-import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3, SideLines} from "./Header";
+import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3} from "./Header";
 
 const Hero = () => {
    const theme = "dark";

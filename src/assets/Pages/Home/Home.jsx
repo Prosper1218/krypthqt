@@ -4,6 +4,7 @@ import Section2 from "../../components/Section2";
 import Sphere from "../../components/Sphere";
 import Section4 from "../../components/Section4";
 import TWE from "../../components/TWE";
+import TheTeam from "../../components/TheTeam";
 
 const Home = () => {
    return (
@@ -13,6 +14,7 @@ const Home = () => {
          <Sphere />
          <Section4 />
          <TWE />
+         <TheTeam />
       </div>
    );
 };

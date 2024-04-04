@@ -1,4 +1,4 @@
-import btc from "../../../public/btc.jpg";
+import btc from "/btc.jpg";
 const Section4 = () => {
    // const router = useRouter();
 

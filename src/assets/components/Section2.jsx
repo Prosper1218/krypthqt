@@ -1,11 +1,10 @@
 import React from "react";
-import talentedpeople from "../../../public/talentedpeople.jpg";
-import {SideLines} from "./Header";
+import talentedpeople from "/talentedpeople.jpg";
 const Section2 = () => {
    const theme = "dark";
    return (
       <section className="px-4 md:px-8 my-10">
-         <SideLines />
+         {/* <SideLines /> */}
          <div className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[72rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4">
             <div className="flex justify-center items-center">
                <img src={talentedpeople} alt="talented traders" className="w-full bg-transparent object-contain min-h-[44] rounded-xl" />

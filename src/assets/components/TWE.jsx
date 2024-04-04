@@ -13,10 +13,10 @@ const TWE = () => {
                </span>
             </h1>
             <p className="grotesk mb-2 text-xs text-center text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] ">[&nbsp; Our Services &nbsp;]</p>
-            <p className="sora text-xs text-center px-4">Explore our comprehensive range of services below and <br />
-            envision the possibilities for your next project.
+            <p className="sora text-xs text-center px-4">
+               Explore our comprehensive range of services below and <br />
+               envision the possibilities for your next project.
             </p>
-
             <div className=" grid grid-cols-1 md:grid-cols-2 py-4 items-start justify-center xl:px-20 px-0">
                <div className=" pl-6 md:pl-10 md:pt-10">
                   {thingsweenjoy2.map((thing) => {
