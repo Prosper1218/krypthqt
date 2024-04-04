@@ -108,10 +108,10 @@ export const BackgroundCircles3 = () => {
 export const SphereBackgroundCircles1 = () => {
    return (
       <>
-         <div className="absolute w-5 h-5 left-[34rem]  rounded-full">
+         <div className="absolute w-5 h-5 left-[30rem]  rounded-full">
             <img src={bitcoin} alt="crptocurency-icon" />
          </div>
-         <div className="absolute w-5 h-5 rounded-full left-[31rem] top-[6.5rem]">
+         <div className="absolute w-5 h-5 rounded-full left-[28rem] top-[6.5rem]">
             <img src={ethereum} alt="crptocurency-icon" />
          </div>
          <div className="absolute w-4 h-4  rounded-full left-[32rem] top-[10rem]">

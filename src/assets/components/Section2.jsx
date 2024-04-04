@@ -34,7 +34,7 @@ const Section2 = () => {
                <button
                   onClick={() => {}}
                   type="button"
-                  className={`outline-none focus:outline-none border-[#fe6700] rounded-lg border-solid mt-4 border-2 px-6 py-3 uppercase ${
+                  className={`outline-none focus:outline-none border-[#fe6700] rounded-lg sora border-solid mt-4 border-2 px-6 py-3 uppercase ${
                      theme === "light" ? "text-[#121212]" : "text-[white]"
                   } text-[75%]`}
                >

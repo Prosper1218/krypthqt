@@ -33,7 +33,7 @@ const Hero = () => {
                      onClick={() => {
                         // router.push("/ContactUs");
                      }}
-                     className={` outline-none focus:outline-none border-[#fe6700] rounded-lg border-solid border-2 px-5 py-3 uppercase text-[80%] tracking-wide  ${
+                     className={` outline-none focus:outline-none border-[#fe6700] sora rounded-lg border-solid border-2 px-5 py-3 uppercase text-[80%] tracking-wide  ${
                         theme === "light" ? "text-[#121212]" : "text-[white]"
                      }`}
                   >
