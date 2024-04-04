@@ -3,14 +3,16 @@ import Hero from "../../components/Hero";
 import Section2 from "../../components/Section2";
 import Sphere from "../../components/Sphere";
 import Section4 from "../../components/Section4";
+import TWE from "../../components/TWE";
 
 const Home = () => {
    return (
-      <div className="text-red-500">
+      <div className="">
          <Hero />
          <Section2 />
          <Sphere />
          <Section4 />
+         <TWE />
       </div>
    );
 };
