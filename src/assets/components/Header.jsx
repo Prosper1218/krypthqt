@@ -79,3 +79,28 @@ export const BackgroundCircles2 = () => {
       </>
    );
 };
+
+export const BackgroundCircles3 = () => {
+   return (
+      <>
+         <div className="absolute top-[8rem] left-16 w-5 h-5  rounded-full breathe jump">
+            <img src={bitcoin} alt="crptocurency-icon" />
+         </div>
+         <div className="absolute top-[12.6rem] right-16 w-5 h-5 rounded-full breathe">
+            <img src={ethereum} alt="crptocurency-icon" />
+         </div>
+         <div className="absolute top-[9.6rem] right-40 w-4 h-4 bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] rounded-full breathe">
+            <img src={dogecoin} alt="crptocurency-icon" />
+         </div>
+         <div className="absolute top-[26.8rem] left-4 w-6 h-6  rounded-full hidden sm:block breathe">
+            <img src={tether} alt="crptocurency-icon" />
+         </div>
+         <div className="absolute top-[30.8rem] left-60 md:left-80 w-6 h-6   rounded-full jump ">
+            <img src={binance} alt="crptocurency-icon" />
+         </div>
+         <div className="absolute top-[32rem] left-[10rem] md:left-[40rem] w-10 h-10   rounded-full p-1 breathe">
+            <img src={codeicon} alt="crptocurency-icon" />
+         </div>
+      </>
+   );
+};

@@ -1,16 +1,19 @@
 import trader from "../../../public/traderbg.jpg";
-import {BackgroundCircles, BackgroundCircles2, SideLines} from "./Header";
+import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3, SideLines} from "./Header";
 
 const Hero = () => {
    const theme = "dark";
    return (
       <>
-         <section className="pt-[12rem] z-40 pb-[3rem] ">
+         <section className="pt-[10rem] z-40 pb-[3rem] overflow-x-hidden">
             <div className="hidden lg:block">
                <BackgroundCircles />
             </div>{" "}
-            <div className="">
+            <div className=" hidden md:block">
                <BackgroundCircles2 />
+            </div>
+            <div className=" md:hidden">
+               <BackgroundCircles3 />
             </div>
             {/* <SideLines/> */}
             <div className="px-6 mx-auto max-w-7xl py-4">
