@@ -29,11 +29,11 @@ export const Links = [
       name: "Our Team",
       to: "/",
    },
-   {
-      id: 5,
-      name: "Blog",
-      to: "/",
-   },
+   // {
+   //    id: 5,
+   //    name: "Blog",
+   //    to: "/",
+   // },
 ];
 
 export const thingsweenjoy1 = [

@@ -224,3 +224,10 @@ body {
       margin-top: 1rem;
    }
 }
+
+.bg-img {
+   background-image: url("../public/btc.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}

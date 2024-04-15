@@ -1,5 +1,6 @@
 import trader from "../../../public/traderbg.jpg";
 import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3} from "./Header";
+import {motion} from "framer-motion";
 
 const Hero = () => {
    const theme = "dark";
@@ -18,18 +19,29 @@ const Hero = () => {
             {/* <SideLines/> */}
             <div className="px-6 mx-auto max-w-7xl py-4">
                <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 sm:text-center">
-                  <h1
+                  <motion.h1
+                     initial={{opacity: 0}}
+                     animate={{opacity: 1}}
+                     transition={{duration: 4}}
                      className={`mb-4 text-4xl font-extrabold leading-none overflow-hidden tracking-normal md:text-6xl md:tracking-tight py-2  ${
                         theme === "light" ? "text-[#121212]" : "text-[#fdfef2]"
                      } `}
                   >
                      <span>Explore</span> <span className="block w-full py-2 leading-12 overflow-hidden lg:inline">the web3 world with</span>{" "}
                      <span className="py-2 block overflow-y-hidden text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] ">Krypt HQ</span>
-                  </h1>
-                  <p className={`px-0 mb-4 text-sm md:text-lg lg:px-32 sora ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"}`}>
+                  </motion.h1>
+                  <motion.p
+                     initial={{opacity: 0, y: 70}}
+                     animate={{opacity: 1, y: 0}}
+                     transition={{duration: 2}}
+                     className={`px-0 mb-4 text-sm md:text-lg lg:px-32 sora ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"}`}
+                  >
                      Join us at the forefront of Web3 evolution. Embrace decentralization and unlock new pathways to success with our solutions.
-                  </p>
-                  <button
+                  </motion.p>
+                  <motion.button
+                     initial={{opacity: 0,}}
+                     animate={{opacity: 1,}}
+                     transition={{duration: 3}}
                      onClick={() => {
                         // router.push("/ContactUs");
                      }}
@@ -38,7 +50,7 @@ const Hero = () => {
                      }`}
                   >
                      Contact us
-                  </button>
+                  </motion.button>
                </div>
             </div>
             <div className=" px-5  xl:px-5">

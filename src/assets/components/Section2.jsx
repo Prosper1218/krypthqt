@@ -1,11 +1,18 @@
 import React from "react";
 import talentedpeople from "/talentedpeople.jpg";
+import {motion} from "framer-motion";
+
 const Section2 = () => {
    const theme = "dark";
    return (
       <section className="px-4 md:px-8 my-10">
          {/* <SideLines /> */}
-         <div className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[72rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4">
+         <motion.div
+            initial={{opacity: 0, y: 70}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration:5}}
+            className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[72rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4"
+         >
             <div className="flex justify-center items-center">
                <img src={talentedpeople} alt="talented traders" className="w-full bg-transparent object-contain min-h-[44] rounded-xl" />
             </div>
@@ -40,7 +47,7 @@ const Section2 = () => {
                   Contact Us
                </button>
             </div>
-         </div>
+         </motion.div>
       </section>
    );
 };

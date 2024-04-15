@@ -8,6 +8,7 @@ import {Links} from "../../../Data";
 import "../../../App.css";
 import cross from "/public/cross.png";
 import menu from "/public/menu.png";
+import {motion} from "framer-motion";
 const Nav = () => {
    const [Navactive, setNavactive] = useState(false);
    // const pathname = usePathname();
