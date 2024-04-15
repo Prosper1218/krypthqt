@@ -1,14 +1,27 @@
 import {ArrowRightIcon} from "@radix-ui/react-icons";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import TheTeam from "../../components/TheTeam";
-import { BackgroundCircles2 } from "../../components/Header";
-
+import {BackgroundCircles2} from "../../components/Header";
 
 const page = () => {
-
    return (
-      <div className="min-h-[100vh] h-auto mt-20 relative bg-transparent">
-         <h1 className=" text-4xl font-extrabold leading-none tracking-normal text-white md:text-5xl md:tracking-tight overflow-hidden py-6 text-center">
+      <div className="min-h-[100vh] h-auto mt-28 relative bg-transparent">
+         <BackgroundCircles2 />
+
+         <p className="sora text-white text-center pt-4 pb-1">About Us</p>
+         <h1 className=" text-4xl font-extrabold leading-none tracking-normal text-white md:text-5xl md:tracking-tight overflow-hidden pb-4 text-center">
+            <span className=" text-transparent text-center bg-clip-text leading-12 bg-gradient-to-r from-[#FF4A00] to-[#ef9e2c] lg:inline px-4">
+               our vision is to become trusted <br /> partners for business worldwide
+            </span>
+         </h1>
+         <div className="flex justify-center z-40">
+            <p className= "text-xs md:text-[100%] text-white sora px-4 max-w-[50rem] text-center margin-auto">
+               we aim to drive transformative growth through innovative marketing strategies, cutting-edge technology, and unparalleled customer experiences. We envision a future
+               where brands thrive, communities flourish, and connections are made meaningful
+            </p>
+         </div>
+
+         {/* <h1 className=" text-4xl font-extrabold leading-none tracking-normal text-white md:text-5xl md:tracking-tight overflow-hidden py-6 text-center">
             <span className="py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#FF4A00] to-[#ef9e2c] lg:inline">About us</span>
             <BackgroundCircles2 />
          </h1>
@@ -28,7 +41,7 @@ const page = () => {
 
          <section className="">
             <TheTeam />
-         </section>
+         </section> */}
       </div>
    );
 };

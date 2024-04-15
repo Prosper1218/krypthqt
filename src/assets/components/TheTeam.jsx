@@ -24,7 +24,7 @@ const TheTeam = () => {
             </p>
          </div>
          {/*  */}
-         <section className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-7 px-4 md:px-16 xl:px-36 overflow-hidden items-start">
+         <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-7 px-4 md:px-16 xl:px-36 overflow-hidden items-start">
             {Team.map((person) => {
                return (
                   <article key={person.id} className="relative z-1 p-0.5 rounded-2xl bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] overflow-hidden">
@@ -38,7 +38,7 @@ const TheTeam = () => {
                               <img src={person.imgsrc} alt={person.name} className="w-full h-full object-center" />
                            </div>
                            <p className=" grotesk text-xs font-bold">[&nbsp;{person.name}&nbsp;]</p>
-                           <p className=" sora text-xs font-bold text-center">{person.role}</p>
+                           <p className=" sora text-xs font-bold text-center px-2">{person.role}</p>
                         </article>
                      </Link>
                   </article>
