@@ -10,7 +10,7 @@ const Section2 = () => {
          <motion.div
             initial={{opacity: 0, y: 70}}
             whileInView={{opacity: 1, y: 0}}
-            transition={{duration:5}}
+            transition={{duration:3}}
             className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[72rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4"
          >
             <div className="flex justify-center items-center">

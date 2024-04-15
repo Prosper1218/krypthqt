@@ -1,6 +1,6 @@
 import React from "react";
 import {thingsweenjoy1, thingsweenjoy2} from "../../Data";
-
+import {motion} from "framer-motion";
 const TWE = () => {
    // const {theme} = UseTheme();
    const theme = "dark";
@@ -16,10 +16,16 @@ const TWE = () => {
                envision the possibilities for your next project.
             </p>
             <div className=" grid grid-cols-1 md:grid-cols-2 py-4 items-start justify-center xl:px-20 px-0">
-               <div className=" pl-6 md:pl-10 md:pt-10">
+               <div className=" pl-6 md:pl-10 md:pt-10 overflow-y-hidden">
                   {thingsweenjoy2.map((thing) => {
                      return (
-                        <article key={thing.id} className={`flex flex-col md:flex-row gap-4 py-3 justify-start ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} `}>
+                        <motion.article
+                           initial={{opacity: 0, y: 70}}
+                           whileInView={{opacity: 1, y: 0}}
+                           transition={{duration: 3}}
+                           key={thing.id}
+                           className={`flex overflow-hidden flex-col md:flex-row gap-4 py-3 justify-start ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} `}
+                        >
                            <div className="text-3xl font-semibold sora flex overflow-hidden tracking-wide text-[#fe6700] ">0{thing.id}</div>
                            <div className={``}>
                               <h3 className="font-bold tracking-wide text-2xl sora">{thing.title}</h3>
@@ -28,15 +34,21 @@ const TWE = () => {
                                  {thing.dess}
                               </p>
                            </div>
-                        </article>
+                        </motion.article>
                      );
                   })}
                </div>
 
-               <div className=" pl-6 md:pl-10">
+               <div className=" pl-6 md:pl-10 overflow-y-hidden">
                   {thingsweenjoy1.map((thing) => {
                      return (
-                        <article key={thing.id} className={`flex flex-col md:flex-row gap-4 py-3 justify-start ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} `}>
+                        <motion.article
+                           initial={{opacity: 0, y: 70}}
+                           whileInView={{opacity: 1, y: 0}}
+                           transition={{duration: 3}}
+                           key={thing.id}
+                           className={`flex flex-col md:flex-row gap-4 py-3 overflow-hidden justify-start ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} `}
+                        >
                            <div className="text-3xl font-semibold sora flex overflow-hidden tracking-wider text-[#fe6700] ">0{thing.id}</div>
                            <div className="">
                               <h3 className="font-bold text-2xl tracking-wide sora">{thing.title}</h3>
@@ -45,7 +57,7 @@ const TWE = () => {
                                  {thing.dess}
                               </p>
                            </div>
-                        </article>
+                        </motion.article>
                      );
                   })}
                </div>

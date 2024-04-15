@@ -1,4 +1,5 @@
 import btc from "/btc.jpg";
+import {motion} from "framer-motion";
 const Section4 = () => {
    // const router = useRouter();
 
@@ -7,7 +8,12 @@ const Section4 = () => {
    return (
       <div>
          <section className="px-4 md:px-8 my-10 ">
-            <div className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[74rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4">
+            <motion.div
+               initial={{opacity: 0, y: 70}}
+               whileInView={{opacity: 1, y: 0}}
+               transition={{duration: 3}}
+               className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[74rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4"
+            >
                <div className="flex justify-center items-center">
                   <img src={btc} alt="financial experts" className="w-full bg-transparent object-contain min-h-[40] rounded-xl" />
                </div>
@@ -41,7 +47,7 @@ const Section4 = () => {
                      Contact Us
                   </button>
                </div>
-            </div>
+            </motion.div>
          </section>
       </div>
    );

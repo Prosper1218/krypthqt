@@ -12,10 +12,12 @@ const Home = () => {
    return (
       <div className="">
          <Hero />
+
          <Section2 />
-         <Sphere />
-         <Section4 />
          <TWE />
+         {/* <Sphere /> */}
+         <Section4 />
+
          <TheTeam />
          <Discuss />
       </div>

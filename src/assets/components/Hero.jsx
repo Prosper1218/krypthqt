@@ -39,8 +39,8 @@ const Hero = () => {
                      Join us at the forefront of Web3 evolution. Embrace decentralization and unlock new pathways to success with our solutions.
                   </motion.p>
                   <motion.button
-                     initial={{opacity: 0,}}
-                     animate={{opacity: 1,}}
+                     initial={{opacity: 0, y: 70}}
+                     animate={{opacity: 1, y: 0}}
                      transition={{duration: 3}}
                      onClick={() => {
                         // router.push("/ContactUs");
