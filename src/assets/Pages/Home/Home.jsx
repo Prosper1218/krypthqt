@@ -5,6 +5,7 @@ import Sphere from "../../components/Sphere";
 import Section4 from "../../components/Section4";
 import TWE from "../../components/TWE";
 import TheTeam from "../../components/TheTeam";
+import { Ham } from "../../components/Header";
 
 const Home = () => {
    return (
@@ -15,6 +16,7 @@ const Home = () => {
          <Section4 />
          <TWE />
          <TheTeam />
+         
       </div>
    );
 };

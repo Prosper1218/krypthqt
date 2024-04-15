@@ -20,7 +20,7 @@ const Section4 = () => {
                      <span className="block py-1 overflow-hidden text-white">
                         <span>Discover web3</span>
                      </span>
-                     <span className=" text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] lg:inline overflow-hidden">with CryptoHqt!</span>
+                     <span className=" text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] lg:inline overflow-hidden">with Crypto Hq!</span>
                   </h1>
                   <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                      Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story.

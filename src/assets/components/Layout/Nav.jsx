@@ -2,12 +2,12 @@ import {Cross1Icon, HamburgerMenuIcon} from "@radix-ui/react-icons";
 import {useState} from "react";
 import logo from "../../../../public/krypthqlogo.png";
 import logo2 from "../../../../public/krypthqlogoLT.png";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {BackgroundCircles2} from "../Header";
 import {Links} from "../../../Data";
-import '../../../App.css'
-import cross from "/public/cross.png"
-import menu from "/public/menu.png"
+import "../../../App.css";
+import cross from "/public/cross.png";
+import menu from "/public/menu.png";
 const Nav = () => {
    const [Navactive, setNavactive] = useState(false);
    // const pathname = usePathname();
@@ -52,7 +52,11 @@ const Nav = () => {
             >
                {Navactive ? <BackgroundCircles2 /> : ""}
                {Links.map((item) => {
-                  return <Link id="link" key={item.id}>{item.name}</Link>;
+                  return (
+                     <NavLink id="link" key={item.id} to={item.to} className={({isActive, isPending}) => (isActive ? "text-[#fe6700]" : null)}>
+                        {item.name}
+                     </NavLink>
+                  );
                })}
 
                <button
@@ -66,7 +70,7 @@ const Nav = () => {
                </button>
             </section>
             <button type="button" className={`flex md:hidden ham border-[#fe6700] border-2 border-solid rounded-md p-2 z-auto`} onClick={handlebtnclick}>
-               {Navactive ? <img src={cross} className="text-[#fe6700] scale-110 w-4 h-4" /> : <img src={menu} className="text-[#fe6700] scale-150 w-4 h-4" />}
+               {Navactive ? <img src={cross} className="text-[#fe6700] scale-110 w-4 h-4 ham-style" /> : <img src={menu} className="text-[#fe6700] scale-150 w-4 h-4 ham-style" />}
             </button>
          </nav>
       </>

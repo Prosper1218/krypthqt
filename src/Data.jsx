@@ -26,7 +26,12 @@ export const Links = [
    },
    {
       id: 4,
-      name: "Our works",
+      name: "Our Team",
+      to: "/",
+   },
+   {
+      id: 5,
+      name: "Blog",
       to: "/",
    },
 ];
