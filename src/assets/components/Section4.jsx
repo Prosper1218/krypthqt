@@ -7,7 +7,7 @@ const Section4 = () => {
    const theme = "dark";
    return (
       <div className=" mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
-         <section className="px-4 md:px-8 my-10 overflow-y-hidden ">
+         <section className="px-4 md:px-8 my-16 overflow-y-hidden ">
             <motion.div
                initial={{opacity: 0, y: 70}}
                whileInView={{opacity: 1, y: 0}}
