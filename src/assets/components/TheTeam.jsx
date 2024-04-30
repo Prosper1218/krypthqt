@@ -29,10 +29,10 @@ const TheTeam = () => {
                return (
                   <article
                      key={person.id}
-                     className="relative z-1 max-w-[20rem] mx-auto sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-6 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
+                     className="relative z-1 max-w-[25rem] mx-auto sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-6 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
                   >
-                     <div className=" h-[33vh] w-[100%] rounded-t-lg">
-                        <img src={person.imgsrc} alt={person.name} className="w-full h-full object-cover" />
+                     <div className=" h-[50vh] md:h-[33vh] w-[100%] rounded-t-lg">
+                        <img src={person.imgsrc} alt={person.name} className="w-full h-full object-center object-fill" />
                      </div>
                      <div className="pl-4">
                         <p className=" grotesk text-sm text-[#fe6700] py-1 font-bold ">{person.name}</p>
