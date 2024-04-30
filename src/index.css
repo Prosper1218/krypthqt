@@ -111,4 +111,5 @@ button:focus-visible {
 
 .ham-style {
    transition: ease-in-out 0.7s;
+   /* color: rgb(60, 60, 60); */
 }

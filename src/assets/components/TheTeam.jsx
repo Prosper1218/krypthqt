@@ -24,18 +24,18 @@ const TheTeam = () => {
             </p>
          </div>
          {/*  */}
-         <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-7 px-4 md:px-16 xl:px-36 overflow-hidden items-start">
+         <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-7 px-4 md:px-16 xl:px-36 overflow-hidden">
             {Team.map((person) => {
                return (
                   <article key={person.id} className="relative z-1 p-0.5 rounded-2xl bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] overflow-hidden">
                      <Link href={`/Our-Team/${person.id}`} className="">
                         <article
-                           className={` flex flex-col justify-center items-center py-12 p-0 rounded-2xl space-y-4 teamcar  ${
+                           className={` flex flex-col justify-center items-center p-0 rounded-2xl space-y-4 teamcar  ${
                               theme === "light" ? "bg-[white] text-[#121212] " : "bg-[#121212] text-[#cccccc]"
                            }`}
                         >
-                           <div className="md:w-20 w-16 h-16 md:h-20 bg-[#fe6700] p-0 rounded-full">
-                              <img src={person.imgsrc} alt={person.name} className="w-full h-full object-center" />
+                           <div className="w-[100%] h-30 bg-[#fe6700] p-0 border">
+                              <img src={person.imgsrc} alt={person.name} className=" object-center" />
                            </div>
                            <p className=" grotesk text-xs font-bold">[&nbsp;{person.name}&nbsp;]</p>
                            <p className=" sora text-xs font-bold text-center px-2">{person.role}</p>

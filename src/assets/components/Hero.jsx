@@ -54,7 +54,7 @@ const Hero = () => {
                </div>
             </div>
             <div className=" px-5  xl:px-5">
-               <div className=" relative max-w-[35rem] mx-auto md:max-w-5xl xl:mb-22 mt-[6rem] md:mt-[8rem] xl:mt-[12rem]">
+               <div className=" relative max-w-[35rem] mx-auto md:max-w-6xl xl:mb-22 mt-[6rem] md:mt-[8rem] xl:mt-[12rem]">
                   <div className=" relative z-1 p-0.5 rounded-2xl bg-gradient-to-r from-[#3fc8d5] to-purple-500 overflow-hidden">
                      <div className="relative rounded-[1rem] overflow-hidden  z-10">
                         <div className=" relative aspect-[33/40] rounded-b-[0.9rem] overflow-y-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
