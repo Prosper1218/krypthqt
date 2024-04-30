@@ -24,15 +24,15 @@ const TheTeam = () => {
             </p>
          </div>
          {/*  */}
-         <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 py-3 md:gap-3 lg:gap-8 px-3 md:px-12 xl:px-32 overflow-hidden items-center justify-center space-y-2 sm:space-y-0">
+         <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 py-3 md:gap-3 lg:gap-8 px-4 md:px-12 xl:px-32 overflow-hidden items-center justify-center space-y-2 sm:space-y-0">
             {Team.map((person) => {
                return (
                   <article
                      key={person.id}
                      className="relative z-1 max-w-[25rem] mx-auto sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-6 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
                   >
-                     <div className=" h-[50vh] md:h-[33vh] w-[100%] rounded-t-lg">
-                        <img src={person.imgsrc} alt={person.name} className="w-full h-full object-center object-fill" />
+                     <div className=" h-[40vh] md:h-[33vh] w-[100%] rounded-t-lg">
+                        <img src={person.imgsrc} alt={person.name} className="w-full h-full object-cover object-center" />
                      </div>
                      <div className="pl-4">
                         <p className=" grotesk text-sm text-[#fe6700] py-1 font-bold ">{person.name}</p>
