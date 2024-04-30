@@ -2,16 +2,16 @@ import React from "react";
 import talentedpeople from "/talentedpeople.jpg";
 import {motion} from "framer-motion";
 import {BackgroundCircles, BackgroundCircles2} from "./Header";
-import square from '/square.png'
+import square from "/square.png";
 const Section2 = () => {
    const theme = "dark";
    return (
       <div className=" relative mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)] ">
-         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate"/>
-         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate rotate-90"/>
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate" />
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate rotate-90" />
 
-         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate"/>
-         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90"/>
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate" />
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90" />
          <section className="px-4 md:px-8 my-16 overflow-y-hidden">
             {/* <SideLines /> */}
 
@@ -44,7 +44,11 @@ const Section2 = () => {
                   </p>
                   <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                      Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story. <br />
-                   <span className="hidden lg:flex">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magni aliquam quibusdam ex pariatur sequi a officiis itaque similique quaerat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, consequuntur.</span>
+                     <span className="hidden lg:flex">
+                        {" "}
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magni aliquam quibusdam ex pariatur sequi a officiis itaque similique quaerat! Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, consequuntur.
+                     </span>
                   </p>
                   <button
                      onClick={() => {}}

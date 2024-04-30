@@ -1,10 +1,15 @@
 import React from "react";
 import "../../App.css";
-
+import square from "/square.png";
 const Discuss = () => {
    const theme = "dark";
    return (
       <div className="min-h-[40vh] h-[30vh] md:h-[55vh] bg-img relative">
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate " />
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate rotate-90 " />
+
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate hidden sm:block" />
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90 hidden sm:block " />
          <div className=" bg-black/80 absolute top-0 bottom-0 left-0 right-0" />
          <div className=" absolute top-0 bottom-0 right-0 left-0 flex flex-col items-center justify-center">
             <h1
