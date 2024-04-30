@@ -4,7 +4,7 @@ import "../../App.css";
 const Discuss = () => {
    const theme = "dark";
    return (
-      <div className="min-h-[50vh] h-[35vh] md:h-[60vh] bg-img relative">
+      <div className="min-h-[40vh] h-[30vh] md:h-[55vh] bg-img relative">
          <div className=" bg-black/80 absolute top-0 bottom-0 left-0 right-0" />
          <div className=" absolute top-0 bottom-0 right-0 left-0 flex flex-col items-center justify-center">
             <h1

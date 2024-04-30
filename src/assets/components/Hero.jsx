@@ -1,6 +1,7 @@
 import trader from "../../../public/traderbg.jpg";
 import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3} from "./Header";
 import {motion} from "framer-motion";
+import square from '/square.png'
 
 const Hero = () => {
    const theme = "dark";
@@ -16,9 +17,11 @@ const Hero = () => {
             <div className=" md:hidden">
                <BackgroundCircles3 />
             </div>
+            <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-40 bottom-8 lg:bottom-[4.3rem] xl:bottom-9 rotate rotate-90 hidden md:block" />
+            <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-40 bottom-8 lg:bottom-[4.3rem] xl:bottom-9 rotate rotate hidden md:block" />
             {/* <SideLines/> */}
             <div className="px-6 mx-auto max-w-7xl py-4">
-               <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 sm:text-center">
+               <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 sm:text-center overflow-y-hidden">
                   <motion.h1
                      initial={{opacity: 0}}
                      animate={{opacity: 1}}
@@ -57,7 +60,7 @@ const Hero = () => {
                <div className=" relative max-w-[35rem] mx-auto md:max-w-6xl xl:mb-22 mt-[6rem] md:mt-[8rem] xl:mt-[12rem]">
                   <div className=" relative z-1 p-0.5 rounded-2xl bg-gradient-to-r from-[#3fc8d5] to-purple-500 overflow-hidden">
                      <div className="relative rounded-[1rem] overflow-hidden  z-10">
-                        <div className=" relative aspect-[33/40] rounded-b-[0.9rem] overflow-y-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+                        <div className=" relative aspect-[33/30] rounded-b-[0.9rem] overflow-y-hidden md:aspect-[688/400] lg:aspect-[1024/450]">
                            <img src={trader} alt="trader" className="w-full h-full object-cover" width={1024} height={490} />
                         </div>
                      </div>

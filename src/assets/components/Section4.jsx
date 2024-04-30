@@ -1,12 +1,20 @@
 import btc from "/btc.jpg";
 import {motion} from "framer-motion";
+import square from '/square.png'
+
+
 const Section4 = () => {
    // const router = useRouter();
 
    // const {theme} = UseTheme();
    const theme = "dark";
    return (
-      <div className=" mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
+      <div className="relative mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate hidden sm:block" />
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate rotate-90 hidden sm:block" />
+
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate hidden sm:block" />
+         <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90 hidden sm:block" />
          <section className="px-4 md:px-8 my-16 overflow-y-hidden ">
             <motion.div
                initial={{opacity: 0, y: 70}}
