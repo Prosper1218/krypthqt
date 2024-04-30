@@ -5,13 +5,13 @@ import {motion} from "framer-motion";
 const Section2 = () => {
    const theme = "dark";
    return (
-      <section className="px-4 md:px-8 my-10">
+      <section className="px-4 md:px-8 my-10 overflow-y-hidden">
          {/* <SideLines /> */}
          <motion.div
             initial={{opacity: 0, y: 70}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration:3}}
-            className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[72rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4"
+            className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] mx-auto md:max-w-[72rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4 overflow-y-hidden"
          >
             <div className="flex justify-center items-center">
                <img src={talentedpeople} alt="talented traders" className="w-full bg-transparent object-contain min-h-[44] rounded-xl" />
