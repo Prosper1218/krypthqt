@@ -7,16 +7,21 @@ import TWE from "../../components/TWE";
 import TheTeam from "../../components/TheTeam";
 import {Ham} from "../../components/Header";
 import Discuss from "../../components/Discuss";
+import talentedpeaople from "/talentedpeople.jpg";
+import btc from "/btc.jpg";
 
 const Home = () => {
    return (
       <div className="">
          <Hero />
 
-         <Section2 />
-         <TWE />
+         <Section2 img={talentedpeaople} header1={"Powered By"} header2={"Talented People"} />
+         <div id="Services">
+            {" "}
+            <TWE />
+         </div>
          {/* <Sphere /> */}
-         <Section4 />
+         <Section4 img={btc} header1={"Discover Web3"} header2={"With Krypthq"} />
 
          <TheTeam />
          <Discuss />

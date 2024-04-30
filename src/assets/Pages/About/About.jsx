@@ -2,67 +2,58 @@ import {ArrowRightIcon} from "@radix-ui/react-icons";
 import {Link} from "react-router-dom";
 import TheTeam from "../../components/TheTeam";
 import {BackgroundCircles2} from "../../components/Header";
+import square from "/square.png";
+import {motion} from "framer-motion";
+import btc from "/btc.jpg";
+import Section2 from "../../components/Section2";
+import Section4 from "../../components/Section4";
+import krypthqlogo from "/krypthqlogo.png";
 
 const page = () => {
+   const theme = "dark";
    return (
-      <div className="min-h-[100vh] h-auto mt-28 relative bg-transparent">
-         <BackgroundCircles2 />
-         <p className="sora text-white text-center pt-4 pb-1">About Us</p>
-         <div className="flex justify-center">
-            {" "}
-            <h1 className=" text-4xl font-extrabold leading-none tracking-normal text-white md:text-5xl md:tracking-tight overflow-hidden pb-4 max-w-[50rem] text-center">
-               <span className=" text-transparent text-center  bg-clip-text leading-12 bg-gradient-to-r from-[#FF4A00] to-[#ef9e2c] lg:inline px-4">
-                  our vision is to become trusted partners for businesses worldwide
-               </span>
-            </h1>
-         </div>
+      <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
+         <div className="min-h-[45vh] h-[35vh] md:h-[60vh] bg-img relative flex flex-col justify-center items-center">
+            <div className=" bg-[#121212]/80 absolute top-0 bottom-0 left-0 right-0" />
+            <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
+               <img src={square} alt="square" className=" w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate " />
+               <img src={square} alt="square" className=" w-[4rem] h-[4rem] sm:w-[5rem]  sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate rotate-90 " />
+               <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate hidden sm:block" />
+               <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90  hidden sm:block" />
+               {/* content */}
+               <h1 className=" text-white text-center pt-4 pb-1 text-3xl sora font-extrabold">About Us</h1>
 
-         <div className="flex justify-center overflow-y-hidden h-auto">
-            <p className="text-xs overflow-y-hidden md:text-[100%] text-white sora px-4 max-w-[50rem] text-center ">
-               we aim to drive transformative growth through innovative marketing strategies, cutting-edge technology, and unparalleled customer experiences. We envision a future
-               where brands thrive, communities flourish, and connections are made meaningful
-            </p>
-         </div>
-
-         <section className="flex justify-center mt-6 w-full">
-            <div className="grid grid-cols-1 justify-center border md:grid-cols-2 max-w-[80%] w-[90%]">
-               <div className="border">
-                  <p className="grotesk text-xs">
-                     HRLink was established in 2009 as a U.S.-based software development & consulting company with development centers in Vietnam. <br />
-                     Besides providing outsourcing services, HRLink has built and successfully launched its own software companies. The most notable companies with millions of
-                     users worldwide. <br />
-                     <br />
-                      HRLink is reliable, secure, and backed by a team of HR experts with a proven track record of developing high-quality technology solutions. <br />
-                      <br />
-                     With the growing size of many startups and SME companies and the increasing complexity of HR regulations and employee expectations, manual HR processes can
-                     become time-consuming, error-prone, and difficult to manage. HR management software provides a centralized platform for storing and automating HR processes to
-                     offer more free time for HR staff.
+               <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}} className="flex justify-center flex-col overflow-y-hidden h-auto px-4">
+                  <p className="text-xs overflow-y-hidden md:text-[100%] text-white sora px-4 max-w-[50rem] text-center leading-5 ">
+                     we aim to drive transformative growth through innovative marketing strategies, cutting-edge technology, and unparalleled customer experiences. We envision a
+                     future where brands thrive, communities flourish, and connections are made meaningful
                   </p>
-               </div>
-               <div className="border">hi</div>
+                  <br />
+               </motion.div>
+               <motion.button
+                  initial={{opacity: 0, y: 70}}
+                  animate={{opacity: 1, y: 0}}
+                  transition={{duration: 3}}
+                  onClick={() => {
+                     // router.push("/ContactUs");
+                  }}
+                  className={` outline-none focus:outline-none border-[#fe6700] h-12 sora rounded-lg border-solid border-2 px-3 py-3 uppercase text-[65%]  sm:text-[80%] tracking-wide  ${
+                     theme === "light" ? "text-[#121212]" : "text-[white]"
+                  }`}
+               >
+                  Contact us
+               </motion.button>
             </div>
-         </section>
-         {/* <h1 className=" text-4xl font-extrabold leading-none tracking-normal text-white md:text-5xl md:tracking-tight overflow-hidden py-6 text-center">
-            <span className="py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#FF4A00] to-[#ef9e2c] lg:inline">About us</span>
-            <BackgroundCircles2 />
-         </h1>
-
-         <div className="flex justify-center flex-col items-center">
-            <p className="text-white sora md:w-[35rem] text-center px-4 text-xs">
-               CryptoHeadquarters is a Digital agencay founded 2022, that create User Centred Product that help her client to evolve ,our core idealogy is Perfection , our goal is
-               to make usefull and easy to use products And help people to grow their busineses!
-            </p>
-
-            <Link href="/#services">
-               <button type="button " className="flex items-center justify-center cursor-pointer gap-1 mt-3">
-                  <span className="font-semibold text-[#FF4A00] capitalize text-xs sora"> check our services</span> <ArrowRightIcon className="height-4 text-white " />
-               </button>
-            </Link>
          </div>
-
-         <section className="">
-            <TheTeam />
-         </section> */}
+         <br />
+         <br />
+         <Section2 img={krypthqlogo} header2={"About Krypthq"} />
+         <br />
+         <div className="border py-4">
+            <p className="text-center">partners</p>
+         </div>
+         <br />
+         <Section4 img={krypthqlogo} header1={"The founders of"} header2={"Krypthq"} />
       </div>
    );
 };

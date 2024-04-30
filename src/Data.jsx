@@ -22,13 +22,13 @@ export const Links = [
    {
       id: 3,
       name: "   Services",
-      to: "/",
+      to: "/#Services",
    },
-   {
-      id: 4,
-      name: "Our Team",
-      to: "/",
-   },
+   // {
+   //    id: 4,
+   //    name: "Our Team",
+   //    to: "/",
+   // },
    // {
    //    id: 5,
    //    name: "Blog",
