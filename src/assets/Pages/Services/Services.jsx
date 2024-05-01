@@ -42,11 +42,11 @@ const Services = () => {
          <br />
          <br />
          <div>
-            <div className="relative mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
+            <div className="relative mx-2 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
                <img src={square} alt="square" className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] absolute right-12 bottom-4 sm:bottom-8 rotate " />
                <img src={square} alt="square" className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] absolute right-12 bottom-4 sm:bottom-8 rotate rotate-90 " />
 
-               <section className="px-2  my-12 overflow-y-hidden ">
+               <section className="px-4  my-12 overflow-y-hidden ">
                   <motion.div
                      initial={{opacity: 0, y: 70}}
                      whileInView={{opacity: 1, y: 0}}
