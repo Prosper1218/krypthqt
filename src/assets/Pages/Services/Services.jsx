@@ -1,27 +1,19 @@
-import {ArrowRightIcon} from "@radix-ui/react-icons";
-import {Link} from "react-router-dom";
-import TheTeam from "../../components/TheTeam";
-import {BackgroundCircles2} from "../../components/Header";
-import square from "/square.png";
-import {motion} from "framer-motion";
-import btc from "/btc.jpg";
-import Section2 from "../../components/Section2";
-import Section4 from "../../components/Section4";
-import krypthqlogo from "/krypthqlogo.png";
-
-const page = () => {
-   const theme = "dark";
+import { motion } from "framer-motion";
+import React from "react";
+import square from '/square.png'
+const Services = () => {
+     const theme = ' dark'
    return (
       <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
-         <div className="min-h-[45vh] h-[35vh] md:h-[65vh] bg-img-about relative flex flex-col justify-center items-center">
+         <div className="min-h-[45vh] h-[35vh] md:h-[60vh] bg-img-services relative flex flex-col justify-center items-center">
             <div className=" bg-[#121212]/80 absolute top-0 bottom-0 left-0 right-0" />
             <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-               <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[5rem] sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate " />
-               <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[5rem]  sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate rotate-90 " />
+               <img src={square} alt="square" className=" w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] absolute right-9 bottom-4 sm:bottom-12 rotate " />
+               <img src={square} alt="square" className=" w-[4rem] h-[4rem] sm:w-[5rem]  sm:h-[5rem] absolute right-9 bottom-4 sm:bottom-12 rotate rotate-90 " />
                <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate hidden sm:block" />
                <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90  hidden sm:block" />
                {/* content */}
-               <h1 className=" text-white text-center pt-4 pb-1 text-3xl sora font-extrabold">About Us</h1>
+               <h1 className=" text-white text-center pt-4 pb-1 text-3xl sora font-extrabold">Our Services</h1>
 
                <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}} className="flex justify-center flex-col overflow-y-hidden h-auto px-4">
                   <p className="text-xs overflow-y-hidden md:text-[100%] text-white sora px-4 max-w-[50rem] text-center leading-5 ">
@@ -47,17 +39,9 @@ const page = () => {
          </div>
          <br />
          <br />
-         <Section2 img={krypthqlogo} header2={"About Krypthq"} />
-         <br />
-         <div className="border py-4">
-            <p className="text-center">partners</p>
-         </div>
-         <br />
-         <Section4 img={krypthqlogo} header1={"The founders of"} header2={"Krypthq"} />
-         <br />
-         <br />
+        
       </div>
    );
 };
 
-export default page;
+export default Services;

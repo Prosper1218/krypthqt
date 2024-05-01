@@ -22,7 +22,7 @@ export const Links = [
    {
       id: 3,
       name: "   Services",
-      to: "/#Services",
+      to: "/Services",
    },
    // {
    //    id: 4,

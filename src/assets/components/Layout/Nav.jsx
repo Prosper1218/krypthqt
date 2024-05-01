@@ -40,7 +40,7 @@ const Nav = () => {
                theme === "light" ? "bg-white" : "bg-[#121212]"
             }`}
          >
-            <Link href="/" className="">
+            <Link to="/" className="">
                <img src={theme === "light" ? logo2 : logo} alt="logo" className="md:w-[8rem] md:h-[5.4rem] w-[6rem] h-[4rem]" />
             </Link>
             <section

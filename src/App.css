@@ -231,7 +231,18 @@ body {
    background-size: cover;
    background-position: center;
 }
-
+.bg-img-about {
+   background-image: url("../public/Aboutusbg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.bg-img-services {
+   background-image: url("../public/servicesbg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
 
 .rotate {
    -webkit-animation:spin 4s linear infinite;

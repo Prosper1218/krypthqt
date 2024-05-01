@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import LayoutContainer from "./assets/components/Layout/LayoutContainer.jsx";
 import Home from "./assets/Pages/Home/Home.jsx";
 import About from "./assets/Pages/About/About.jsx";
+import Services from "./assets/Pages/Services/Services.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
    <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route element={<LayoutContainer />}>
                <Route path="/" element={<Home />} />
                <Route path="/About" element={<About />} />
+               <Route path="/Services" element={<Services />} />
             </Route>
          </Routes>
       </BrowserRouter>
