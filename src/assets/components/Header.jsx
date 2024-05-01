@@ -8,6 +8,8 @@ import codeicon from "/public/codeicon.png";
 import filecoin from "/public/images-coins/filecoin.svg";
 import "../../index.css";
 import "../../App.css";
+import arrow1 from "/public/arrowVector1.png";
+import arrow2 from "/public/arrowVector2.png";
 // import {MouseParallax, ScrollParallax} from "react-just-parallax";
 
 export const Rings = () => {
@@ -145,6 +147,30 @@ export const Ham = () => {
                <path className="line" d="M7 16 27 16"></path>
             </svg>
          </label>
+      </>
+   );
+};
+
+export const Arrow1 = ({width, height}) => {
+   return (
+      <>
+         <img src={arrow1} alt="arrow" className={`hidden lg:block  absolute object-cover bottom-2 left-[10rem] xl:left-[13rem] ${width} ${height}`} />
+      </>
+   );
+};
+
+export const Arrow2 = ({width, height}) => {
+   return (
+      <>
+         <img src={arrow2} alt="arrow" className={` hidden lg:block  absolute object-cover top-1 left-[24rem]  xl:left-[34rem] ${width} ${height}`} />
+      </>
+   );
+};
+
+export const Arrow3 = ({width, height}) => {
+   return (
+      <>
+         <img src={arrow1} alt="arrow" className={`hidden lg:block absolute object-cover bottom-2 right-[10rem] xl:right-[13rem] ${width} ${height}`} />
       </>
    );
 };

@@ -14,15 +14,16 @@ export const Links = [
       name: "Home",
       to: "/",
    },
-   {
-      id: 2,
-      name: "About",
-      to: "/About",
-   },
+
    {
       id: 3,
       name: "   Services",
       to: "/Services",
+   },
+   {
+      id: 2,
+      name: "About",
+      to: "/About",
    },
    // {
    //    id: 4,
@@ -172,5 +173,28 @@ export const Socials = [
       id: 5,
       icon: telegram,
       title: "telegram",
+   },
+];
+
+export const Process = [
+   {
+      id: 1,
+      header: "Research",
+      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta ex atque accusantium. consectetur adipisicing elit. Autem dicta ex atque accusantium",
+   },
+   {
+      id: 2,
+      header: "Design",
+      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta ex atque accusantium. consectetur adipisicing elit. Autem dicta ex atque accusantium",
+   },
+   {
+      id: 3,
+      header: "Test",
+      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta ex atque accusantium. consectetur adipisicing elit. Autem dicta ex atque accusantium",
+   },
+   {
+      id: 4,
+      header: "Implement",
+      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta ex atque accusantium. consectetur adipisicing elit. Autem dicta ex atque accusantium",
    },
 ];

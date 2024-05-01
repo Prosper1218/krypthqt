@@ -13,8 +13,8 @@ const page = () => {
    const theme = "dark";
    return (
       <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
-         <div className="min-h-[45vh] h-[35vh] md:h-[65vh] bg-img-about relative flex flex-col justify-center items-center">
-            <div className=" bg-[#121212]/80 absolute top-0 bottom-0 left-0 right-0" />
+         <div className="min-h-[45vh] h-[35vh] md:h-[65vh] xl:h-[70vh] bg-img-about relative flex flex-col justify-center items-center">
+            <div className=" bg-[#121212]/60 absolute top-0 bottom-0 left-0 right-0" />
             <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
                <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[5rem] sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate " />
                <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[5rem]  sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate rotate-90 " />
