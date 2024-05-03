@@ -25,9 +25,9 @@ const Section2 = ({img, header1,header2}) => {
                   <img src={img} alt="talented traders" className="w-full bg-transparent object-contain min-h-[44] rounded-xl" />
                </div>
 
-               <div className="w-full mx-auto text-left md:w-11/12 xl:w-14/14 space-y-2">
+               <div className="w-full mx-auto text-left md:w-11/12 xl:w-14/14 ">
                   <h1
-                     className={`mb-4 text-2xl font-extrabold leading-none tracking-normal py-1 md:text-4xl md:tracking-tight overflow-hidden ${
+                     className={` lg:mb-4 text-2xl font-extrabold leading-none tracking-normal py-1 md:text-4xl md:tracking-tight overflow-hidden ${
                         theme === "light" ? "text-[#121212]" : "text-[white]"
                      }`}
                   >

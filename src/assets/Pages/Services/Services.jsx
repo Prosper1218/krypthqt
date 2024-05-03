@@ -3,6 +3,8 @@ import React from "react";
 import square from "/square.png";
 import {Process} from "../../../Data";
 import {Arrow1, Arrow2, Arrow3} from "../../components/Header";
+import TWE from '../../components/TWE'
+
 const Services = () => {
    const theme = " dark";
    return (
@@ -69,7 +71,7 @@ const Services = () => {
                   </motion.div>
 
                   
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 space-y-2 sm:space-y-0 relative pb-6 lg:pb-20  max-w-[37rem] xl:max-w-[80rem] mx-auto md:max-w-[74rem] pt-[1rem] md:pt-[4.1rem]">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 justify-center md:grid-cols-3 lg:grid-cols-4 gap-2 space-y-2 sm:space-y-0 relative pb-6 lg:pb-20  max-w-[37rem] xl:max-w-[80rem] mx-auto md:max-w-[74rem] pt-[1rem] md:pt-[4.1rem]">
                      <Arrow1 width={"w-[11rem]"} />
                      <Arrow2 width={"w-[11rem]"} />
                      <Arrow3 width={"w-[11rem]"} />
@@ -77,13 +79,14 @@ const Services = () => {
                         return (
                            <section key={item.id} className="">
                               <div className="flex gap-3 flex-row items-center justify-start ">
-                                 <span className="sora font-extrabold text-[#fe6700] text-[110%]">0{item.id}</span> <h4 className="bold sora text-[90%] ">{item.header}</h4>
+                                 <span className="sora font-extrabold text-[#fe6700] text-[110%]">0{item.id}</span> <h4 className="bold sora text-[110%] ">{item.header}</h4>
                               </div>
                               <p className="text-[#cccccc] text-xs grotesk">{item.title}</p>
                            </section>
                         );
                      })}
                   </div>
+                  <TWE/>
                </section>
             </div>
             <br />
@@ -91,6 +94,7 @@ const Services = () => {
          <br />
          <br />
          <br />
+         
       </div>
    );
 };

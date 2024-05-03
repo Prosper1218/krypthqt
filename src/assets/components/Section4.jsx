@@ -24,9 +24,9 @@ const Section4 = ({img, header1, header2}) => {
                <div className="flex justify-center items-center">
                   <img src={img} alt="financial experts" className="w-full bg-transparent object-contain min-h-[40] rounded-xl" />
                </div>
-               <div className="w-full mx-auto text-left md:w-11/12 xl:w-14/14 space-y-2">
+               <div className="w-full mx-auto text-left md:w-11/12 xl:w-14/14">
                   <h1
-                     className={`mb-4 text-2xl font-extrabold leading-none tracking-normal ${
+                     className={`lg:mb-4 text-2xl font-extrabold leading-none tracking-normal ${
                         theme === "light" ? "text-[#121212]" : "text-[#121212]"
                      }  md:text-4xl md:tracking-tight overflow-hidden py-2`}
                   >

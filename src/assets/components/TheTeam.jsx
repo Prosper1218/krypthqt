@@ -35,17 +35,17 @@ const TheTeam = () => {
                return (
                   <article
                      key={person.id}
-                     className="relative z-1 sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-8 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
+                     className="relative z-1 sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-9 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
                   >
                      <div className=" h-[35vh] md:h-[33vh] w-[100%] rounded-t-lg">
                         <img src={person.imgsrc} alt={person.name} className="w-full h-full object-cover object-center" />
                      </div>
-                     <div className="pl-4">
+                     <div className="pl-2 sm:pl-4">
                         <p className=" grotesk text-sm text-[#fe6700] py-1 font-bold ">{person.name}</p>
                         <p className=" sora text-xs font-bold pb-1">{person.role}</p>
                      </div>
 
-                     <div className="pl-4">
+                     <div className="pl-2 sm:pl-4">
                         <p className="text-[#cccccc] text-xs sora pr-2">
                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, sapiente error voluptate iusto laborum quia? Autem necessitatibus porro
                         </p>
