@@ -2,9 +2,11 @@ import trader from "../../../public/traderbg.jpg";
 import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3} from "./Header";
 import {motion} from "framer-motion";
 import square from '/square.png'
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
    const theme = "dark";
+   const navigate = useNavigate()
    return (
       <>
          <section className="pt-[10rem] z-40 pb-[3rem] overflow-x-hidden">
@@ -17,8 +19,8 @@ const Hero = () => {
             <div className=" md:hidden">
                <BackgroundCircles3 />
             </div>
-            <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-40 bottom-8 lg:bottom-[4.3rem] xl:bottom-9 rotate rotate-90 hidden md:block" />
-            <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-40 bottom-8 lg:bottom-[4.3rem] xl:bottom-9 rotate rotate hidden md:block" />
+            <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute right-40 bottom-8 lg:bottom-[4.3rem] xl:bottom-9 rotate rotate-90 hidden md:block" />
+            <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute right-40 bottom-8 lg:bottom-[4.3rem] xl:bottom-9 rotate rotate hidden md:block" />
             {/* <SideLines/> */}
             <div className="px-6 mx-auto max-w-7xl py-4">
                <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 sm:text-center overflow-y-hidden">
@@ -46,9 +48,9 @@ const Hero = () => {
                      animate={{opacity: 1, y: 0}}
                      transition={{duration: 3}}
                      onClick={() => {
-                        // router.push("/ContactUs");
+                        navigate("/ContactUs")
                      }}
-                     className={` outline-none focus:outline-none border-[#fe6700] sora rounded-lg border-solid border-2 px-5 py-3 uppercase text-[80%] tracking-wide  ${
+                     className={` outline-none focus:outline-none border-[#fe6700] sora rounded-lg border-solid border-2 px-5 py-2 uppercase text-[80%] tracking-wide  ${
                         theme === "light" ? "text-[#121212]" : "text-[white]"
                      }`}
                   >

@@ -4,9 +4,11 @@ import square from "/square.png";
 import {Process} from "../../../Data";
 import {Arrow1, Arrow2, Arrow3} from "../../components/Header";
 import TWE from '../../components/TWE'
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
    const theme = " dark";
+   const navigate = useNavigate()
    return (
       <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
          <div className="min-h-[45vh] h-[35vh] md:h-[65vh] xl:h-[70vh] bg-img-services relative flex flex-col justify-center items-center">
@@ -32,8 +34,9 @@ const Services = () => {
                   transition={{duration: 3}}
                   onClick={() => {
                      // router.push("/ContactUs");
+                     navigate("/ContactUs")
                   }}
-                  className={` outline-none focus:outline-none border-[#fe6700] h-12 sora rounded-lg border-solid border-2 px-3 py-3 uppercase text-[65%]  sm:text-[80%] tracking-wide  ${
+                  className={` outline-none focus:outline-none border-[#fe6700] h-10 sora rounded-lg border-solid border-2 px-3 py-2 uppercase text-[65%]  sm:text-[80%] tracking-wide  ${
                      theme === "light" ? "text-[#121212]" : "text-[white]"
                   }`}
                >

@@ -1,8 +1,10 @@
 import React from "react";
 import "../../App.css";
 import square from "/square.png";
+import {useNavigate} from "react-router-dom";
 const Discuss = () => {
    const theme = "dark";
+   const navigate = useNavigate();
    return (
       <div className="min-h-[40vh] h-[30vh] md:h-[55vh] bg-img relative">
          <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute right-12 bottom-12 rotate " />
@@ -26,8 +28,9 @@ const Discuss = () => {
             <button
                onClick={() => {
                   // router.push("/ContactUs");
+                  navigate("/ContactUs");
                }}
-               className={` outline-none focus:outline-none border-[#fe6700] sora rounded-lg border-solid border-2 px-5 py-3 uppercase text-[80%] tracking-wide  ${
+               className={` outline-none focus:outline-none border-[#fe6700] sora rounded-lg border-solid border-2 px-5 py-2 uppercase text-[80%] tracking-wide  ${
                   theme === "light" ? "text-[#121212]" : "text-[white]"
                }`}
             >

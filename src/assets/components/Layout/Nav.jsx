@@ -2,7 +2,7 @@ import {Cross1Icon, HamburgerMenuIcon} from "@radix-ui/react-icons";
 import {useState} from "react";
 import logo from "../../../../public/krypthqlogo.png";
 import logo2 from "../../../../public/krypthqlogoLT.png";
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink, useNavigate} from "react-router-dom";
 import {BackgroundCircles2} from "../Header";
 import {Links} from "../../../Data";
 import "../../../App.css";
@@ -13,6 +13,7 @@ const Nav = () => {
    const [Navactive, setNavactive] = useState(false);
    // const pathname = usePathname();
    // const router = useRouter();
+   const navigate = useNavigate()
 
    const handlebtnclick = () => {
       if (Navactive === true) {
@@ -29,7 +30,7 @@ const Nav = () => {
       }
    };
    const handlecontactus = () => {
-      // router.push("/ContactUs");
+      navigate("/ContactUs")
    };
    const theme = "dark";
 
@@ -62,7 +63,7 @@ const Nav = () => {
 
                <button
                   type="button"
-                  className={`border-[#fe6700] rounded-lg border-solid border-2 px-5 py-3 uppercase text-[80%] tracking-wide  ${
+                  className={`border-[#fe6700] rounded-lg border-solid sora border-2 px-5 py-2 uppercase text-[80%] tracking-wide  ${
                      theme === "light" ? "text-[#121212]" : "text-[#cccccc]"
                   }`}
                   onClick={handlecontactus}

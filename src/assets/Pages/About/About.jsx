@@ -1,5 +1,5 @@
 import {ArrowRightIcon} from "@radix-ui/react-icons";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import TheTeam from "../../components/TheTeam";
 import {BackgroundCircles2} from "../../components/Header";
 import square from "/square.png";
@@ -11,15 +11,16 @@ import krypthqlogo from "/krypthqlogo.png";
 
 const page = () => {
    const theme = "dark";
+   const navigate = useNavigate()
    return (
       <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
          <div className="min-h-[45vh] h-[35vh] md:h-[65vh] xl:h-[70vh] bg-img-about relative flex flex-col justify-center items-center">
             <div className=" bg-[#121212]/60 absolute top-0 bottom-0 left-0 right-0" />
             <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-               <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[5rem] sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate " />
-               <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[5rem]  sm:h-[5rem] absolute right-12 bottom-7 sm:bottom-12 rotate rotate-90 " />
-               <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate hidden sm:block" />
-               <img src={square} alt="square" className="w-[5rem] h-[5rem] absolute left-9 top-9 rotate rotate-90  hidden sm:block" />
+               <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] absolute right-12 bottom-7 sm:bottom-12 rotate " />
+               <img src={square} alt="square" className=" w-[3rem] h-[3rem] sm:w-[4rem]  sm:h-[4rem] absolute right-12 bottom-7 sm:bottom-12 rotate rotate-90 " />
+               <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute left-9 top-9 rotate hidden sm:block" />
+               <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute left-9 top-9 rotate rotate-90  hidden sm:block" />
                {/* content */}
                <h1 className=" text-white text-center pt-4 pb-1 text-3xl sora font-extrabold">About Us</h1>
 
@@ -36,8 +37,9 @@ const page = () => {
                   transition={{duration: 3}}
                   onClick={() => {
                      // router.push("/ContactUs");
+                     navigate("/ContactUs")
                   }}
-                  className={` outline-none focus:outline-none border-[#fe6700] h-12 sora rounded-lg border-solid border-2 px-3 py-3 uppercase text-[65%]  sm:text-[80%] tracking-wide  ${
+                  className={` outline-none focus:outline-none border-[#fe6700] h-10 sora rounded-lg border-solid border-2 px-3 py-2 uppercase text-[65%]  sm:text-[80%] tracking-wide  ${
                      theme === "light" ? "text-[#121212]" : "text-[white]"
                   }`}
                >

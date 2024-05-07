@@ -1,11 +1,10 @@
 import btc from "/btc.jpg";
 import {motion} from "framer-motion";
 import square from "/square.png";
+import { useNavigate } from "react-router-dom";
 
 const Section4 = ({img, header1, header2}) => {
-   // const router = useRouter();
-
-   // const {theme} = UseTheme();
+   const navigate = useNavigate()
    const theme = "dark";
    return (
       <div className="relative mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
@@ -35,13 +34,13 @@ const Section4 = ({img, header1, header2}) => {
                      </span>
                      <span className=" text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] lg:inline overflow-hidden">{header2}</span>
                   </h1>
-                  <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
+                  <p className={`px-0 lg:mb-3 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                      Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story.
                   </p>
-                  <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
+                  <p className={`px-0 lg:mb-3 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                      wanted with our next-level templates and designs. Crafted to help you tell your story.
                   </p>
-                  <p className={`px-0 lg:mb-4 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
+                  <p className={`px-0 lg:mb-3 text-xs ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"} md:text-sm text-left sora`}>
                      Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story.
                      <span className="hidden lg:flex">
                         {" "}
@@ -50,9 +49,9 @@ const Section4 = ({img, header1, header2}) => {
                      </span>
                   </p>
                   <button
-                     onClick={() => {}}
+                     onClick={() => {navigate("/ContactUs")}}
                      type="button"
-                     className={`outline-none focus:outline-none border-[#fe6700] rounded-lg sora border-solid mt-4 border-2 px-6 py-3 uppercase ${
+                     className={`outline-none focus:outline-none border-[#fe6700] rounded-lg sora border-solid mt-4 border-2 px-6 py-2 uppercase ${
                         theme === "light" ? "text-[#121212]" : "text-[white]"
                      } text-[75%]`}
                   >

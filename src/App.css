@@ -119,6 +119,7 @@ body {
    #link {
       font-size: 150%;
       font-family: "sora", sans-serif;
+      letter-spacing: 0.1em;
    }
 }
 
