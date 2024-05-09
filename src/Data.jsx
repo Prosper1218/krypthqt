@@ -1,4 +1,5 @@
-import oliver from "../public/team-members/oliver.jpg";
+import oliver from "../public/team-members/oliver.png";
+import sly from "../public/team-members/sly.png";
 import nft2 from "../public/nfts/nft2.jpg";
 import nft3 from "../public/nfts/nft3.jpeg";
 import nft4 from "../public/nfts/nft4.jpg";
@@ -93,7 +94,7 @@ export const Team = [
    },
    {
       id: 2,
-      imgsrc: nft6,
+      imgsrc: sly,
       name: "Mark ali",
       role: "Owner/ Creative director",
       linktofb: "",
@@ -104,7 +105,7 @@ export const Team = [
    },
    {
       id: 3,
-      imgsrc: nft4,
+      imgsrc: oliver,
       name: "David john",
       role: "Head of marketing",
       linktofb: "",
@@ -115,7 +116,7 @@ export const Team = [
    },
    {
       id: 4,
-      imgsrc: nft3,
+      imgsrc: sly,
       name: "John dane",
       role: "graphic designer",
       linktofb: "",
@@ -126,7 +127,7 @@ export const Team = [
    },
    {
       id: 5,
-      imgsrc: nft2,
+      imgsrc: oliver,
       name: "Alice kate",
       role: "social media manager",
       linktofb: "",
@@ -137,7 +138,7 @@ export const Team = [
    },
    {
       id: 6,
-      imgsrc: nft5,
+      imgsrc: sly,
       name: "John doe",
       role: "web designer / developer",
       linktofb: "",

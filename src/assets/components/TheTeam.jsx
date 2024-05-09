@@ -2,13 +2,13 @@ import React from "react";
 import {Team} from "../../Data";
 import {BackgroundCircles2} from "./Header";
 import {motion} from "framer-motion";
-
+import {LazyLoadImage} from "react-lazy-load-image-component";
 const TheTeam = () => {
    const theme = "dark";
    return (
       <div className=" overflow-hidden pb-16">
          {/* header */}
-         <div className="py-12">
+         <div className="py-10">
             <div className="hidden md:block">
                <BackgroundCircles2 />
             </div>
@@ -29,27 +29,27 @@ const TheTeam = () => {
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 3}}
             viewport={{once: "true"}}
-            className="grid grid-cols-2 border sm:grid-cols-3 lg:grid-cols-4 gap-2 py-4 md:gap-3 lg:gap-8 px-4 md:px-12 xl:px-32 overflow-hidden items-center justify-center space-y-2 sm:space-y-0"
+            className=" py-4 md:gap-3 lg:gap-8 overflow-hidden justify-center space-y-2 sm:space-y-0 grid grid-cols-2 px-4 sm:grid-cols-3 gap-4 mt-2 mx-auto lg:max-w-[80%] xl:max-w-[70%] items-center"
          >
             {Team.map((person) => {
                return (
                   <article
                      key={person.id}
-                     className="relative z-1 sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-9 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
+                     className="relative z-1 sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-5 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
                   >
-                     <div className=" h-[35vh] md:h-[33vh] w-[100%] rounded-t-lg">
-                        <img src={person.imgsrc} alt={person.name} className="w-full h-full object-cover object-center" />
+                     <div className=" h-[100%] w-[100%] rounded-t-lg">
+                        <LazyLoadImage visibleByDefault="true" src={person.imgsrc} alt={person.name} className="w-full h-full object-cover" />
                      </div>
-                     <div className="pl-2 sm:pl-4">
-                        <p className=" grotesk text-sm text-[#fe6700] py-1 font-bold ">{person.name}</p>
-                        <p className=" sora text-xs font-bold pb-1">{person.role}</p>
+                     <div className="">
+                        <p className=" grotesk text-[75%] pt-1 text-center">{person.role}</p>
+                        <p className=" sora text-sm text-[#fe6700] py-1 font-bold text-center ">{person.name}</p>
                      </div>
 
-                     <div className="pl-2 sm:pl-4">
+                     {/* <div className="pl-2 sm:pl-4">
                         <p className="text-[#cccccc] text-xs sora pr-2">
                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cumque, sapiente error voluptate iusto laborum quia? Autem necessitatibus porro
                         </p>
-                     </div>
+                     </div> */}
                   </article>
                );
             })}
