@@ -1,10 +1,9 @@
-import btc from "/btc.jpg";
 import {motion} from "framer-motion";
 import square from "/square.png";
-import { useNavigate } from "react-router-dom";
-
+import {useNavigate} from "react-router-dom";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 const Section4 = ({img, header1, header2}) => {
-   const navigate = useNavigate()
+   const navigate = useNavigate();
    const theme = "dark";
    return (
       <div className="relative mx-4 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
@@ -18,10 +17,11 @@ const Section4 = ({img, header1, header2}) => {
                initial={{opacity: 0, y: 70}}
                whileInView={{opacity: 1, y: 0}}
                transition={{duration: 3}}
+               viewport={{once: "true"}}
                className=" min-h-[30vh] grid grid-cols-1 md:grid-cols-2 max-w-[35rem] xl:max-w-[80rem] mx-auto md:max-w-[74rem] xl:mb-22 space-y-3 md:space-y-0 lg:gap-4 overflow-y-hidden"
             >
                <div className="flex justify-center items-center">
-                  <img src={img} alt="financial experts" className="w-full bg-transparent object-contain min-h-[40] rounded-xl" />
+                  <LazyLoadImage visibleByDefault="true" src={img} alt="financial experts" className="w-full bg-transparent object-contain min-h-[40] rounded-xl" />
                </div>
                <div className="w-full mx-auto text-left md:w-11/12 xl:w-14/14">
                   <h1
@@ -49,7 +49,9 @@ const Section4 = ({img, header1, header2}) => {
                      </span>
                   </p>
                   <button
-                     onClick={() => {navigate("/ContactUs")}}
+                     onClick={() => {
+                        navigate("/ContactUs");
+                     }}
                      type="button"
                      className={`outline-none focus:outline-none border-[#fe6700] rounded-lg sora border-solid mt-4 border-2 px-6 py-2 uppercase ${
                         theme === "light" ? "text-[#121212]" : "text-[white]"

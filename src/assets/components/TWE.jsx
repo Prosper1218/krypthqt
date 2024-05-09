@@ -2,7 +2,6 @@ import React from "react";
 import {thingsweenjoy1, thingsweenjoy2} from "../../Data";
 import {motion} from "framer-motion";
 const TWE = () => {
-   // const {theme} = UseTheme();
    const theme = "dark";
    return (
       <div>

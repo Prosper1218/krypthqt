@@ -48,12 +48,6 @@
 /*  */
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-/* :root {
-  --font-sora: "Sora", sans-serif;
-  --font-code: "Source Code Pro", monospace;
-  --font-grotesk: "Space Grotesk", sans-serif;
-  color-scheme: dark;
-} */
 #root {
    max-width: 100%;
    margin: 0px;
@@ -246,20 +240,24 @@ body {
 }
 
 .rotate {
-   -webkit-animation:spin 4s linear infinite;
-   -moz-animation:spin 4s linear infinite;
-   animation:spin 4s linear infinite;
+   -webkit-animation: spin 4s linear infinite;
+   -moz-animation: spin 4s linear infinite;
+   animation: spin 4s linear infinite;
 }
 
-@-moz-keyframes spin { 
-   100% { -moz-transform: rotate(360deg); } 
+@-moz-keyframes spin {
+   100% {
+      -moz-transform: rotate(360deg);
+   }
 }
-@-webkit-keyframes spin { 
-   100% { -webkit-transform: rotate(360deg); } 
+@-webkit-keyframes spin {
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
 }
-@keyframes spin { 
-   100% { 
-       -webkit-transform: rotate(360deg); 
-       transform:rotate(360deg); 
-   } 
+@keyframes spin {
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
 }

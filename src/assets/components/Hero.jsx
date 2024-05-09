@@ -1,12 +1,13 @@
 import trader from "../../../public/traderbg.jpg";
 import {BackgroundCircles, BackgroundCircles2, BackgroundCircles3} from "./Header";
 import {motion} from "framer-motion";
-import square from '/square.png'
-import { useNavigate } from "react-router-dom";
+import square from "/square.png";
+import {useNavigate} from "react-router-dom";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 const Hero = () => {
    const theme = "dark";
-   const navigate = useNavigate()
+   const navigate = useNavigate();
    return (
       <>
          <section className="pt-[10rem] z-40 pb-[3rem] overflow-x-hidden">
@@ -28,6 +29,7 @@ const Hero = () => {
                      initial={{opacity: 0}}
                      animate={{opacity: 1}}
                      transition={{duration: 4}}
+                     viewport={{once: "true"}}
                      className={`mb-4 text-4xl font-extrabold leading-none overflow-hidden tracking-normal md:text-6xl md:tracking-tight py-2  ${
                         theme === "light" ? "text-[#121212]" : "text-[#fdfef2]"
                      } `}
@@ -39,6 +41,7 @@ const Hero = () => {
                      initial={{opacity: 0, y: 70}}
                      animate={{opacity: 1, y: 0}}
                      transition={{duration: 2}}
+                     viewport={{once: "true"}}
                      className={`px-0 mb-4 text-sm md:text-lg lg:px-32 sora ${theme === "light" ? "text-[#121212]" : "text-[#cccccc]"}`}
                   >
                      Join us at the forefront of Web3 evolution. Embrace decentralization and unlock new pathways to success with our solutions.
@@ -47,8 +50,9 @@ const Hero = () => {
                      initial={{opacity: 0, y: 70}}
                      animate={{opacity: 1, y: 0}}
                      transition={{duration: 3}}
+                     viewport={{once: "true"}}
                      onClick={() => {
-                        navigate("/ContactUs")
+                        navigate("/ContactUs");
                      }}
                      className={` outline-none focus:outline-none border-[#fe6700] sora rounded-lg border-solid border-2 px-5 py-2 uppercase text-[80%] tracking-wide  ${
                         theme === "light" ? "text-[#121212]" : "text-[white]"
@@ -63,7 +67,7 @@ const Hero = () => {
                   <div className=" relative z-1 p-0.5 rounded-2xl bg-gradient-to-r from-[#3fc8d5] to-purple-500 overflow-hidden">
                      <div className="relative rounded-[1rem] overflow-hidden  z-10">
                         <div className=" relative aspect-[33/30] rounded-b-[0.9rem] overflow-y-hidden md:aspect-[688/400] lg:aspect-[1024/450]">
-                           <img src={trader} alt="trader" className="w-full h-full object-cover" width={1024} height={490} />
+                           <LazyLoadImage visibleByDefault="true" src={trader} alt="trader" className="w-full h-full object-cover" width={1024} height={490} />
                         </div>
                      </div>
                   </div>

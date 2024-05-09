@@ -1,17 +1,13 @@
-import {ArrowRightIcon} from "@radix-ui/react-icons";
 import {Link, useNavigate} from "react-router-dom";
-import TheTeam from "../../components/TheTeam";
-import {BackgroundCircles2} from "../../components/Header";
 import square from "/square.png";
 import {motion} from "framer-motion";
-import btc from "/btc.jpg";
 import Section2 from "../../components/Section2";
 import Section4 from "../../components/Section4";
 import krypthqlogo from "/krypthqlogo.png";
 
 const page = () => {
    const theme = "dark";
-   const navigate = useNavigate()
+   const navigate = useNavigate();
    return (
       <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
          <div className="min-h-[45vh] h-[35vh] md:h-[65vh] xl:h-[70vh] bg-img-about relative flex flex-col justify-center items-center">
@@ -36,8 +32,7 @@ const page = () => {
                   animate={{opacity: 1, y: 0}}
                   transition={{duration: 3}}
                   onClick={() => {
-                     // router.push("/ContactUs");
-                     navigate("/ContactUs")
+                     navigate("/ContactUs");
                   }}
                   className={` outline-none focus:outline-none border-[#fe6700] h-10 sora rounded-lg border-solid border-2 px-3 py-2 uppercase text-[65%]  sm:text-[80%] tracking-wide  ${
                      theme === "light" ? "text-[#121212]" : "text-[white]"
@@ -51,9 +46,7 @@ const page = () => {
          <br />
          <Section2 img={krypthqlogo} header2={"About Krypthq"} />
          <br />
-         <div className="border py-4">
-            <p className="text-center">partners</p>
-         </div>
+
          <br />
          <Section4 img={krypthqlogo} header1={"The founders of"} header2={"Krypthq"} />
          <br />

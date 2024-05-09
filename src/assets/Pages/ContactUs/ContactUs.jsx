@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const ContactUs = () => {
-  return (
-    <div className='mt-24 border'>
-     <br />
-     ContactUs
+   return (
+      <div className="mt-24 border">
+         <br />
+         ContactUs
+      </div>
+   );
+};
 
-    </div>
-  )
-}
-
-export default ContactUs
+export default ContactUs;

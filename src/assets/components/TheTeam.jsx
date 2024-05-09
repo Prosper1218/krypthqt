@@ -1,7 +1,6 @@
 import React from "react";
 import {Team} from "../../Data";
 import {BackgroundCircles2} from "./Header";
-import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 
 const TheTeam = () => {
@@ -29,7 +28,8 @@ const TheTeam = () => {
             initial={{opacity: 0, y: 70}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 3}}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 py-4 md:gap-3 lg:gap-8 px-4 md:px-12 xl:px-32 overflow-hidden items-center justify-center space-y-2 sm:space-y-0"
+            viewport={{once: "true"}}
+            className="grid grid-cols-2 border sm:grid-cols-3 lg:grid-cols-4 gap-2 py-4 md:gap-3 lg:gap-8 px-4 md:px-12 xl:px-32 overflow-hidden items-center justify-center space-y-2 sm:space-y-0"
          >
             {Team.map((person) => {
                return (
