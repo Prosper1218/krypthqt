@@ -37,8 +37,8 @@ const Nav = () => {
    return (
       <>
          <nav
-            className={`flex justify-between h-[5.8rem] w-[100%] items-center px-4 md:px-8 xl:px-12 overflow-y-hidden fixed  top-0 z-20 md:border-b border-1 border-gray-600/40 ${
-               theme === "light" ? "bg-white" : "bg-[#121212]"
+            className={`flex justify-between h-[6.9rem] w-[100%] items-center px-4 md:px-8 xl:px-12 overflow-y-hidden fixed  top-0 z-20 md:border-b border-1 border-gray-600/40 ${
+               theme === "light" ? "bg-white" : "bg-[#0B1215]"
             }`}
          >
             <Link to="/" className="">

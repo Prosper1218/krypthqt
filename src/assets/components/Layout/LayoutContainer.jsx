@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const LayoutContainer = () => {
    return (
-      <div className="bg-[#121212] min-h-[100vh] h-auto overflow-x-hidden ">
+      <div className="bg-[#0B1215] min-h-[100vh] h-auto overflow-x-hidden ">
          <Nav />
          <Outlet />
          <Footer />

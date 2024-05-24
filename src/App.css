@@ -83,7 +83,7 @@ body {
    transition: 0.5s ease-in-out;
 }
 #link {
-   font-size: 85%;
+   font-size: 100%;
    font-family: "sora", sans-serif;
    /* color: #cccccc; */
 }
@@ -234,6 +234,12 @@ body {
 }
 .bg-img-services {
    background-image: url("../public/servicesbg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.bg-img-contact {
+   background-image: url("../public/contactbg.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
