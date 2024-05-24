@@ -12,7 +12,7 @@ const TheTeam = () => {
             <div className="hidden md:block">
                <BackgroundCircles2 />
             </div>
-            <h1 className=" text-2xl text-center font-extrabold leading-none tracking-normal md:text-6xl md:tracking-tight overflow-hidden">
+            <h1 className=" text-3xl text-center font-extrabold leading-none tracking-normal md:text-5xl md:tracking-tight overflow-hidden">
                <span className=" text-transparent bg-clip-text leading-12 pb-2 bg-gradient-to-r from-[#FF4A00] to-[#ef9e2c] lg:inline overflow-hidden ">Our Team</span>
             </h1>
 
