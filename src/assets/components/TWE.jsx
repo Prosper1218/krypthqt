@@ -6,11 +6,11 @@ const TWE = () => {
    return (
       <div>
          <div className="my-7" id="services">
-            <h1 className=" text-2xl  font-extrabold leading-none text-center tracking-normal text-white md:text-4xl md:tracking-tight overflow-hidden py-2">
+            <h1 className=" text-3xl  font-extrabold leading-none text-center tracking-normal text-white md:text-5xl md:tracking-tight overflow-hidden py-2">
                <span className=" text-transparent text-center bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] lg:inline overflow-hidden ">What we offer</span>
             </h1>
-            <p className="grotesk mb-2 text-xs text-center text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] ">[&nbsp; Our Services &nbsp;]</p>
-            <p className="sora text-xs text-center px-4">
+            <p className="grotesk mb-2 text-sm text-center text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] ">[&nbsp; Our Services &nbsp;]</p>
+            <p className="sora md:text-md  text-xs text-center px-4">
                Explore our comprehensive range of services below and <br />
                envision the possibilities for your next project.
             </p>
@@ -27,7 +27,7 @@ const TWE = () => {
                         >
                            <div className="text-3xl font-semibold sora flex overflow-hidden tracking-wide text-[#fe6700] ">0{thing.id}</div>
                            <div className={``}>
-                              <h3 className="font-bold tracking-wide text-2xl sora">{thing.title}</h3>
+                              <h3 className="font-bold tracking-wide lg:text-3xl overflow-y-hidden text-2xl sora">{thing.title}</h3>
                               <p className=" text-sm grotesk pr-2 pt-3">
                                  {thing.des} <br />
                                  {thing.dess}
@@ -50,7 +50,7 @@ const TWE = () => {
                         >
                            <div className="text-3xl font-semibold sora flex overflow-hidden tracking-wider text-[#fe6700] ">0{thing.id}</div>
                            <div className="">
-                              <h3 className="font-bold text-2xl tracking-wide sora">{thing.title}</h3>
+                              <h3 className="font-bold lg:text-3xl text-2xl tracking-wide overflow-y-hidden sora">{thing.title}</h3>
                               <p className=" text-sm grotesk pr-2  pt-3">
                                  {thing.des} <br />
                                  {thing.dess}

@@ -12,14 +12,14 @@ const Services = () => {
    return (
       <div className="min-h-[100vh] h-auto mt-[5.8rem] relative bg-transparent">
          <div className="min-h-[45vh] h-[35vh] md:h-[65vh] xl:h-[70vh] bg-img-services relative flex flex-col justify-center items-center">
-            <div className=" bg-[#121212]/60 absolute top-0 bottom-0 left-0 right-0" />
+            <div className=" bg-[#0B1215]/60 absolute top-0 bottom-0 left-0 right-0" />
             <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
                <img src={square} alt="square" className=" w-[3.5rem] h-[3.5rem] sm:w-[4rem] sm:h-[4rem] absolute right-9 bottom-4 sm:bottom-12 rotate " />
                <img src={square} alt="square" className=" w-[3.5rem] h-[3.5rem] sm:w-[4rem]  sm:h-[4rem] absolute right-9 bottom-4 sm:bottom-12 rotate rotate-90 " />
                <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute left-9 top-9 rotate hidden sm:block" />
                <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute left-9 top-9 rotate rotate-90  hidden sm:block" />
                {/* content */}
-               <h1 className=" text-white text-center pt-4 pb-1 text-3xl sora font-extrabold">Our Services</h1>
+               <h1 className=" text-white text-center pt-4 pb-1 text-4xl sora font-extrabold">Our Services</h1>
 
                <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}} className="flex justify-center flex-col overflow-y-hidden h-auto px-4">
                   <p className="text-xs overflow-y-hidden md:text-[100%] text-white sora px-4 max-w-[50rem] text-center leading-5 ">
@@ -44,9 +44,8 @@ const Services = () => {
             </div>
          </div>
          <br />
-         <br />
-         <div>
-            <div className="relative mx-2 lg:mx-16 rounded-lg bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]">
+         <div className=" pt-2">
+            <div className="relative mx-2 lg:mx-16 rounded-lg bg-[#0B1215] shadow-[0px_4px_16px_rgba(0,0,0,0.5),_0px_8px_24px_rgba(0,0,0,0.5),_0px_16px_56px_rgba(0,0,0,0.5)]">
                <img src={square} alt="square" className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] absolute right-12 bottom-4 sm:bottom-8 rotate " />
                <img src={square} alt="square" className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] absolute right-12 bottom-4 sm:bottom-8 rotate rotate-90 " />
 

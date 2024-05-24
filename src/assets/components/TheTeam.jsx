@@ -12,11 +12,11 @@ const TheTeam = () => {
             <div className="hidden md:block">
                <BackgroundCircles2 />
             </div>
-            <h1 className=" text-2xl text-center font-extrabold leading-none tracking-normal md:text-4xl md:tracking-tight overflow-hidden">
+            <h1 className=" text-2xl text-center font-extrabold leading-none tracking-normal md:text-6xl md:tracking-tight overflow-hidden">
                <span className=" text-transparent bg-clip-text leading-12 pb-2 bg-gradient-to-r from-[#FF4A00] to-[#ef9e2c] lg:inline overflow-hidden ">Our Team</span>
             </h1>
 
-            <p className="grotesk mb-4 text-xs text-center text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] bold tracking-wider">
+            <p className="grotesk mb-2 text-sm text-center pt-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#fe6700] to-[#ef9e2c] bold tracking-wider">
                [&nbsp; Meet Us &nbsp;]
             </p>
             <p className={`px-4 text-xs md:text-md sora text-center  ${theme === "light" ? "text-[#121212] " : "text-[#cccccc]"}`}>
@@ -35,7 +35,7 @@ const TheTeam = () => {
                return (
                   <article
                      key={person.id}
-                     className="relative z-1 sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-5 bg-[#101010] shadow-[0px_4px_16px_rgba(68,68,68,0.1),_0px_8px_24px_rgba(68,68,68,0.1),_0px_16px_56px_rgba(68,68,68,0.1)]"
+                     className="relative z-1 sm:w-auto margin-auto items-center justify-center md:max-w-[100%]  rounded-lg overflow-hidden pb-5 bg-[#0B1215] shadow-[0px_4px_16px_rgba(0,0,0,0.5),_0px_8px_24px_rgba(0,0,0,0.5),_0px_16px_56px_rgba(0,0,0,0.5)]"
                   >
                      <div className=" h-[100%] w-[100%] rounded-t-lg">
                         <LazyLoadImage visibleByDefault="true" src={person.imgsrc} alt={person.name} className="w-full h-full object-cover" />
@@ -53,7 +53,9 @@ const TheTeam = () => {
                   </article>
                );
             })}
+            <br />
          </motion.section>
+         
       </div>
    );
 };
