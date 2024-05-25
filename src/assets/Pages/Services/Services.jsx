@@ -19,7 +19,7 @@ const Services = () => {
                <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute left-9 top-9 rotate hidden sm:block" />
                <img src={square} alt="square" className="w-[4rem] h-[4rem] absolute left-9 top-9 rotate rotate-90  hidden sm:block" />
                {/* content */}
-               <h1 className=" text-white text-center pt-4 pb-1 text-4xl sora font-extrabold">Our Services</h1>
+               <h1 className=" text-white text-center pt-4 pb-1 text-4xl sora font-extrabold overflow-y-hidden">Our Services</h1>
 
                <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}} className="flex justify-center flex-col overflow-y-hidden h-auto px-4">
                   <p className="text-xs overflow-y-hidden md:text-[100%] text-white sora px-4 max-w-[50rem] text-center leading-5 ">

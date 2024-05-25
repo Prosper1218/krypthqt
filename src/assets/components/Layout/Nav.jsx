@@ -55,7 +55,7 @@ const Nav = () => {
                {Navactive ? <BackgroundCircles2 /> : ""}
                {Links.map((item) => {
                   return (
-                     <NavLink id="link" key={item.id} to={item.to} className={({isActive, isPending}) => (isActive ? "text-[#fe6700]" : null)}>
+                     <NavLink id="link" key={item.id} to={item.to} className={({isActive, isPending}) => (isActive ? "text-[#fe6700] md:scale-125" : null)}>
                         {item.name}
                      </NavLink>
                   );
