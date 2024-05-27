@@ -48,7 +48,7 @@ const Nav = () => {
                className={`md:flex justify-center gap-6 md:gap-8 uppercase md:items-center md:text-xs left-0 right-0 bottom-0 md:bg-transparent md:w-auto fixed md:static top-[5.5rem] md:h-screen flex-col md:flex-row font-semibold flex items-start pl-8 transition z-30 nav transform md:translate-x-0 text-n-1  ${
                   Navactive ? "translate-x-0 opacity-100" : "translate-x-[-50rem]"
                }
-               ${theme === "light" ? "text-[#121212] bg-white" : "text-[#cccccc] bg-[#121212]"}
+               ${theme === "light" ? "text-[#121212] bg-white" : "text-[#cccccc] bg-[#0B1215]"}
                `}
                onClick={handlelinkclick}
             >
@@ -63,7 +63,7 @@ const Nav = () => {
 
                <button
                   type="button"
-                  className={`border-[#fe6700] rounded-lg border-solid sora border-2 px-5 py-2 uppercase text-[80%] tracking-wide  ${
+                  className={`border-[#fe6700] rounded-lg border-solid sora border-2 px-5 py-2 uppercase text-[100%] tracking-wide  ${
                      theme === "light" ? "text-[#121212]" : "text-[#cccccc]"
                   }`}
                   onClick={handlecontactus}

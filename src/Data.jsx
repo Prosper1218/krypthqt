@@ -199,3 +199,22 @@ export const Process = [
       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta ex atque accusantium. consectetur adipisicing elit. Autem dicta ex atque accusantium",
    },
 ];
+
+export const ContactDetails = [
+   {
+      id: 1,
+      header: "+234 567 879 0",
+      title: "Hotline",
+   },
+   {
+      id: 2,
+      header: "+234 567 879 0",
+      title: "Hotline",
+   },
+   {
+      id: 3,
+      header: <a href="google.com">krypthqt@gmail.com</a> ,
+      title: "Email",
+   },
+ 
+];
